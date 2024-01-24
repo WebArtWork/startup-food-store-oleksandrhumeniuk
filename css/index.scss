@@ -6,3 +6,88 @@
 @import "scss/base";
 // pages
 @import "scss/pages/template";
+$color_1: #000000;
+$color_2: #fff;
+$font-family_1: Arial, sans-serif;
+$background-color_1: #ffffff;
+$background-color_2: orange;
+$background-color_3: transparent;
+
+body {
+    font-family: $font-family_1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $background-color_1;
+    color: $color_1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    a {
+        color: $color_1;
+        margin-right: 20px;
+        text-decoration: none;
+    }
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.number {
+    margin-right: 10px;
+}
+
+.button {
+    background-color: $background-color_2;
+    color: $color_2;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.cart-button {
+    background-color: $background-color_3;
+    color: $color_2;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    padding-top: 20px;
+    border-top: 4px solid #ccc;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scroll-container {
+    display: inline-block;
+    width: 300px;
+    margin-right: 10px;
+}

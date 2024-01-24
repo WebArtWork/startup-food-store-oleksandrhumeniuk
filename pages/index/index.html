@@ -1,12 +1,46 @@
-{% for product in top_products %}
-	<h1>{{{product.name}}}</h1>
-	<img src="{{{product.thumb}}}" alt="{{{product.name}}}">
-{% endfor %}
-{% for product in products %}
-	<h1>{{{product.name}}}</h1>
-	<img src="{{{product.thumb}}}" alt="{{{product.name}}}">
-{% endfor %}
-{% for article in articles %}
-	<h1>{{{article.name}}}</h1>
-	<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
-{% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Kitchen</title>
+    <link rel="stylesheet" href="/template/css/index.scss">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Смачна кухня</div>
+
+        <div class="menu">
+            <a href="#">Умови доставки</a>
+            <a href="#">Замовити столик</a>
+            <a href="#">
+                <img src="https://i.pinimg.com/originals/a0/88/10/a0881023763e13874bf497e680a3594a.png" alt="Пошук"
+                    class="search-icon">
+            </a>
+
+            <div class="number">+380(98)352-22-22</div>
+            <button class="button">Увійти</button>
+            <button class="cart-button">
+                <img src="https://cdn2.iconfinder.com/data/icons/e-commerce-211/128/02_Shopping_Bag-512.png"
+                    alt="Корзина" class="cart-icon">
+                Корзина
+            </button>
+        </div>
+    </header>
+
+    <main>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Компанія. Усі права захищені.</p>
+    </footer>
+
+</body>
+
+</html>
