@@ -10,18 +10,18 @@ $color_1: #000000;
 $color_2: #fff;
 $font-family_1: Arial, sans-serif;
 $background-color_1: #ffffff;
-$background-color_2: orange;
+$background-color_2: #FDF2E5;
 $background-color_3: transparent;
 
 body {
-    font-family: $font-family_1;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: $background-color_1;
-    color: $color_1;
+    background-color: #ffffff;
+    color: #000000;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -29,20 +29,19 @@ header {
 }
 
 .logo {
-    margin-left: 30px;
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
 }
 
 .menu {
     display: flex;
     align-items: center;
+}
 
-    a {
-        color: $color_1;
-        margin-right: 20px;
-        text-decoration: none;
-    }
+.menu a {
+    color: #000000;
+    margin-right: 20px;
+    text-decoration: none;
 }
 
 .search-icon {
@@ -53,15 +52,27 @@ header {
 
 .number {
     margin-right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 .button {
-    background-color: $background-color_2;
-    color: $color_2;
+    background-color: #FDF2E5;
+    color: orange;
     padding: 8px 16px;
     border-radius: 20px;
     margin-right: 10px;
     cursor: pointer;
+}
+
+.cart-button {
+    border: none;
+    background-color: #ffffff;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-align: center;
 }
 
 .cart-icon {
@@ -70,24 +81,95 @@ header {
     margin-right: 5px;
 }
 
-.cart-button {
-    background-color: $background-color_3;
-    color: $color_2;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+.cart-button img {
+    display: block;
+    margin: 0 auto;
 }
+
 
 main {
     padding-top: 20px;
     border-top: 4px solid #ccc;
-    overflow-x: auto;
-    white-space: nowrap;
 }
 
-.scroll-container {
-    display: inline-block;
-    width: 300px;
-    margin-right: 10px;
+$color_1: #000000;
+$color_2: orange;
+$background-color_1: #FDF2E5;
+
+$color_1: #000000;
+$color_2: orange;
+$background-color_1: #FDF2E5;
+
+$color_1: #000000;
+$color_2: orange;
+$background-color_1: #FDF2E5;
+
+$color_1: #000000;
+$color_2: orange;
+$background-color_1: #FDF2E5;
+
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products-header {
+    font-weight: bolder;
+    margin-left: 200px;
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-container {
+    width: calc(23% - 2%);
+    margin: 1%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &:first-child {
+        clear: left;
+    }
+
+    &:not(:first-child) {
+        border-top: none;
+    }
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-description {
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: $color_1;
+    margin-top: auto;
+}
+
+
+.add-to-cart-button {
+    background-color: $background-color_1;
+    color: $color_2;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
 }
