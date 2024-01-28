@@ -108,6 +108,89 @@ $color_1: #000000;
 $color_2: orange;
 $background-color_1: #FDF2E5;
 
+.scroll-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: grab;
+    cursor: -webkit-grab;
+}
+
+.container:hover {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.item {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.scroll-box {
+    display: inline-block;
+}
+
+img {
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.word-container {
+    width: 100px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.scroll-container {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    width: 70%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: grab;
+    cursor: -webkit-grab;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.scroll-box {
+    display: flex;
+}
+
+
 .main-container {
     width: 80%;
     margin: 0 auto;
