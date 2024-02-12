@@ -13,7 +13,7 @@
 
 <body>
 
-    <header>
+    <header class="web-header">
         <div class="logo">Смачна кухня</div>
 
         <div class="menu">
@@ -23,19 +23,24 @@
                 <img src="https://i.pinimg.com/originals/a0/88/10/a0881023763e13874bf497e680a3594a.png" alt="Пошук"
                     class="search-icon">
             </a>
-
+            <button class="number">
+                <img src="https://cdn4.iconfinder.com/data/icons/basic-icon-set-1/512/19-512.png" alt="workTime"
+                    class="time-icon">
+            </button>
             <button class="number">+380(98)352-22-22</button>
             <button class="button">Увійти</button>
             <button class="cart-button">
+                <div class="text_bag"> 3 </div>
                 <img src="https://cdn2.iconfinder.com/data/icons/e-commerce-211/128/02_Shopping_Bag-512.png"
                     alt="Корзина" class="cart-icon">
             </button>
+
         </div>
     </header>
 
     <main>
         <div class="scroll-container">
-            <button class="scroll-button" onclick="scrollLeft()">←</button>
+            <button class="scroll-buttonLeft" onclick="scrollLeft()">←</button>
             <div class="container">
                 <div class="scroll-box">
                     <img src="image1.jpg" alt="Image 1">
@@ -48,10 +53,10 @@
                     <img src="image8.jpg" alt="Image 8">
                 </div>
             </div>
-            <button class="scroll-button" onclick="scrollRight()">→</button>
+            <button class="scroll-buttonRight" onclick="scrollRight()">→</button>
         </div>
         <div class="scroll-container">
-            <button class="scroll-button" onclick="scrollLeft()">←</button>
+            <button class="scroll-buttonLeft" onclick="scrollLeft()">←</button>
             <div class="container">
                 <div class="scroll-box">
                     <div class="word-container">Word 1</div>
@@ -64,7 +69,7 @@
                     <div class="word-container">Word 8</div>
                 </div>
             </div>
-            <button class="scroll-button" onclick="scrollRight()">→</button>
+            <button class="scroll-buttonRight" onclick="scrollRight()">→</button>
         </div>
         <div class="products-header">СНІДАНКИ</div>
 

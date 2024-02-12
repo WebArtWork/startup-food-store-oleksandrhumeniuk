@@ -19,7 +19,7 @@ body {
     padding: 0;
 }
 
-header {
+.web-header {
     background-color: #ffffff;
     color: #000000;
     padding: 10px;
@@ -47,7 +47,13 @@ header {
 .search-icon {
     width: 20px;
     height: 20px;
-    margin-right: 10px;
+    margin-right: auto;
+}
+
+.time-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: auto;
 }
 
 .number {
@@ -68,11 +74,12 @@ header {
 
 .cart-button {
     border: none;
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 8px 16px;
     margin-right: 10px;
     cursor: pointer;
     text-align: center;
+    position: relative;
 }
 
 .cart-icon {
@@ -81,11 +88,42 @@ header {
     margin-right: 5px;
 }
 
+.text_bag {
+    color: #000;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #F6971D;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-button:hover .text_bag {
+    background-color: #F6971D;
+}
+
 .cart-button img {
     display: block;
     margin: 0 auto;
+
 }
 
+img {
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
 
 main {
     padding-top: 20px;
@@ -108,7 +146,8 @@ $color_1: #000000;
 $color_2: orange;
 $background-color_1: #FDF2E5;
 
-.scroll-button {
+.scroll-buttonLeft,
+.scroll-buttonRight {
     padding: 5px 10px;
     background-color: #007bff;
     color: #fff;
@@ -147,17 +186,6 @@ $background-color_1: #FDF2E5;
     display: inline-block;
 }
 
-img {
-    width: 200px;
-    height: 50px;
-    margin: 20px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-img:hover {
-    transform: scale(1.1);
-}
 
 .word-container {
     width: 100px;
@@ -172,22 +200,36 @@ img:hover {
 
 .scroll-container {
     display: flex;
+    justify-content: center;
     align-items: center;
     overflow-x: auto;
-    width: 70%;
+    width: 100%;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
     padding: 10px;
     cursor: grab;
     cursor: -webkit-grab;
 }
 
+.scroll-container:nth-child(2) .container {
+    width: 65%;
+}
+
+
 .container {
     overflow: hidden;
+    white-space: nowrap;
+    width: 70%;
+    max-width: 1200px;
 }
 
 .scroll-box {
     display: flex;
+}
+
+.scroll-container-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 
