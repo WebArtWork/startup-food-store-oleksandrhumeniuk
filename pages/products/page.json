@@ -1,26 +1,57 @@
 {
 	"name": "products",
-	"products": [
+	"tags": [
 		{
-			"id": "/product",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        	"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "product"
+			"name": "СНІДАНКИ",
+			"products": [
+				{
+					"name": "Ситний сніданок з куркою",
+					"price": "239 грн",
+					"weight": "200 г.",
+					"description": "Грильована курка су-від, печена картопля, вершковий соус, яйце пашот, мікс салату, помідор чері, пармезан.",
+					"thumb": "https://cdn-media.choiceqr.com/prod-eat-brunet/menu/thumbnail_vTEfEUq-wvsvCGS-nIwymXi_w-W-F.jpeg"
+				},
+				{
+					"name": "product",
+					"price": "1200 грн",
+					"weight": "200 г.",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+					"thumb": "/oleksandrhumeniuk/img/avatar.png"
+				},
+				{
+					"name": "product",
+					"price": "1200 грн",
+					"weight": "200 г.",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+					"thumb": "/oleksandrhumeniuk/img/avatar.png"
+				}
+			]
 		},
 		{
-			"id": "/product",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        	"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "product"
-		},
-		{
-			"id": "/product",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        	"thumb": "https://neryxomka.com/template/img/welcome.png",
-			"name": "product"
+			"name": "Народні страви",
+			"products": [
+				{
+					"name": "product",
+					"price": "1200 грн",
+					"weight": "200 г.",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+					"thumb": "/oleksandrhumeniuk/img/avatar.png"
+				},
+				{
+					"name": "product",
+					"price": "1200 грн",
+					"weight": "200 г.",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+					"thumb": "/oleksandrhumeniuk/img/avatar.png"
+				},
+				{
+					"name": "product",
+					"price": "1200 грн",
+					"weight": "200 г.",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+					"thumb": "/oleksandrhumeniuk/img/avatar.png"
+				}
+			]
 		}
 	]
 }

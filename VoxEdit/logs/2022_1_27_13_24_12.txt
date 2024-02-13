@@ -5,7 +5,7 @@ VoxEdit Beta e2de1723
 Running with no arguments.
 
 Requesting:
-GET https://templates.voxedit.io/Animator/AnimatorListWithCategories.json HTTP/1.1
+GET https://oleksandrhumeniuks.voxedit.io/Animator/AnimatorListWithCategories.json HTTP/1.1
 responseBody length: 37212
 xxx [UISplash].visitRecursive took 1228 ms
 Requesting:
