@@ -6,7 +6,7 @@ Running with no arguments.
 
 xxx [UISplash].visitRecursive took 696 ms
 Requesting:
-GET https://templates.voxedit.io/Animator/AnimatorListWithCategories.json HTTP/1.1
+GET https://oleksandrhumeniuks.voxedit.io/Animator/AnimatorListWithCategories.json HTTP/1.1
 responseBody length: 37212
 xxx [UISplash].visitRecursive took 1236 ms
 Requesting:
@@ -36,7 +36,7 @@ Path = /
 Server says e2de1723 is latest version.
 Loading Recent Files from C:\Users\magaz\VoxEdit\recent_modeler
 Requesting:
-GET https://templates.voxedit.io/Animator/AnimatorListWithCategories.json HTTP/1.1
+GET https://oleksandrhumeniuks.voxedit.io/Animator/AnimatorListWithCategories.json HTTP/1.1
 responseBody length: 37212
 Name = __cf_bm
 Value = n41bH6SwnNsIxaExW0SRSikRi3cRmRdh8rwA4P9TGOY-1643282281-0-AdCujjQ+XRNyCW25pRlbwOSz1yF9VR2gXAxCQEV8KwIZj85yU/IjqPo+H2/aU1NX60LMuA/QI3A5FNK8nRuS6rM=
@@ -48,7 +48,7 @@ Setting modal VoxEdit$UIXPopupFile@4ffe023e @ offset[0,00px 0,00px] size[100,00%
 path is [C:\Users\magaz\VoxEdit\Untitled]
 C:, Users, magaz, VoxEdit, Untitled.
 Clearing modal
-Downloading template from https://templates.voxedit.io/Animator/Equip_Blades_V2.zip
+Downloading template from https://oleksandrhumeniuks.voxedit.io/Animator/Equip_Blades_V2.zip
 mvp C:/Users/magaz/VoxEdit/Untitled/Equip_Blades_V2/Belly.png to C:/Users/magaz/VoxEdit/Untitled/Belly.png
 mvp C:/Users/magaz/VoxEdit/Untitled/Equip_Blades_V2/Belly.vxm to C:/Users/magaz/VoxEdit/Untitled/Belly.vxm
 mvp C:/Users/magaz/VoxEdit/Untitled/Equip_Blades_V2/Blades_Blade.png to C:/Users/magaz/VoxEdit/Untitled/Blades_Blade.png
