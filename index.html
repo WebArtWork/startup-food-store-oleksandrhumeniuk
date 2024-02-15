@@ -81,6 +81,19 @@
             {% endfor %}
             {% endfor %}
         </div>
+        <div class="main-container">
+            {% for category in nationalDishes %}
+            <div id="{{{tag.id}}}" class="products-header">{{{category.name}}}</div>
+            {% for product in category.products %}
+            <div class="product-container">
+                <img src="{{{product.thumb}}}" alt="Product 1" class="product-image">
+                <h3 class="product-title">{{{product.name}}}</h3>
+                <p class="product-description">{{{product.description}}}</p>
+                <span class="product-price">{{{product.price}}}</span>
+            </div>
+            {% endfor %}
+            {% endfor %}
+        </div>
     </main>
 
 
