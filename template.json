@@ -10,10 +10,78 @@
 	"variables": {
 		"phone": "+380 (98) 352-22-22"
 	},
-	"store": {
-		"name": "Store Name",
-		"description": "Store Description"
-	},
+	"restname": [
+		{
+			"src": "https://1000logos.net/wp-content/uploads/2021/05/Vogue-logo.png",
+			"alt": "image1.jpg"
+		},
+		{
+			"src": "https://1000logos.net/wp-content/uploads/2021/05/Vogue-logo.png",
+			"alt": "image1.jpg"
+		},
+		{
+			"src": "https://1000logos.net/wp-content/uploads/2021/05/Vogue-logo.png",
+			"alt": "image1.jpg"
+		},
+		{
+			"src": "https://1000logos.net/wp-content/uploads/2021/05/Vogue-logo.png",
+			"alt": "image1.jpg"
+		}
+	],
+	"dishesCategory": [
+		{
+			"name": "СНІДАНКИ",
+			"products": [
+				{
+					"name": "Ситний сніданок з куркою",
+					"price": "239 грн",
+					"weight": "200 г.",
+					"description": "Грильована курка су-від, печена картопля, вершковий соус, яйце пашот, мікс салату, помідор чері, пармезан.",
+					"thumb": "https://cdn-media.choiceqr.com/prod-eat-brunet/menu/thumbnail_vTEfEUq-wvsvCGS-nIwymXi_w-W-F.jpeg"
+				},
+				{
+					"name": "product",
+					"price": "1200 грн",
+					"weight": "200 г.",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+					"thumb": "/oleksandrhumeniuk/img/avatar.png"
+				},
+				{
+					"name": "product",
+					"price": "1200 грн",
+					"weight": "200 г.",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+					"thumb": "/oleksandrhumeniuk/img/avatar.png"
+				}
+			]
+		},
+		{
+			"name": "Народні страви",
+			"products": [
+				{
+					"name": "product",
+					"price": "1200 грн",
+					"weight": "200 г.",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+					"thumb": "/oleksandrhumeniuk/img/avatar.png"
+				},
+				{
+					"name": "product",
+					"price": "1200 грн",
+					"weight": "200 г.",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+					"thumb": "/oleksandrhumeniuk/img/avatar.png"
+				},
+				{
+					"name": "product",
+					"price": "1200 грн",
+					"weight": "200 г.",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+					"thumb": "/oleksandrhumeniuk/img/avatar.png"
+				}
+			]
+		}
+	],
 	"footer": {
 		"products": [
 			{
@@ -139,7 +207,6 @@
 			"name": "Tag one"
 		}
 	],
-
 	"groups": [
 		{
 			"categories": [
