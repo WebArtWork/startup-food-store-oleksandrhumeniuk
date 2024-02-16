@@ -10,10 +10,126 @@
 	"variables": {
 		"phone": "+380 (98) 352-22-22"
 	},
-	"store": {
-		"name": "Store Name",
-		"description": "Store Description"
-	},
+	"restname": [
+		{
+			"src": "/oleksandrhumeniuk/img/restLogo1.jpg",
+			"alt": "image1.jpg"
+		},
+		{
+			"src": "/oleksandrhumeniuk/img/restLogo2.jpg",
+			"alt": "image1.jpg"
+		},
+		{
+			"src": "/oleksandrhumeniuk/img/restLogo3.jpg",
+			"alt": "image1.jpg"
+		},
+		{
+			"src": "/oleksandrhumeniuk/img/restLogo4.jpg",
+			"alt": "image1.jpg"
+		},
+		{
+			"src": "/oleksandrhumeniuk/img/restLogo5.jpeg",
+			"alt": "image1.jpg"
+		}
+	],
+	"dishesCategory": [
+		{
+			"name": "СНІДАНКИ",
+			"products": [
+				{
+					"name": "Англійський сніданок",
+					"price": "350 грн",
+					"weight": "200 г.",
+					"description": "- Яєчня, бекон, мисливські ковбаски, квасоля, печений томат, тости- Сирники зі сметаною та джемом.- Сік/кава/чай",
+					"thumb": "/oleksandrhumeniuk/img/breakfast1.jpeg"
+				},
+				{
+					"name": "Сніданок Опера з лососем Гравлакс та крем - сиром",
+					"price": "350 грн",
+					"weight": "200 г.",
+					"description": "- Яйця пашот з сирним соусом, лосось гравлакс з крем-сиром на тостах, салатний мікс з томатами та огірком.- Сирники зі сметаною та джемом- Сік/кава/чай",
+					"thumb": "/oleksandrhumeniuk/img/breakfast2.jpeg"
+				},
+				{
+					"name": "Сніданок Опера з беконом та сиром маасдам",
+					"price": "350 грн",
+					"weight": "200 г.",
+					"description": "- Яйця пашот, бекон, сир мааздам, сирний соус на тостах з міксом салата, огірок, томат.- Сирники зі сметаною та джемом- Сік/кава/чай",
+					"thumb": "/oleksandrhumeniuk/img/breakfast3.jpg"
+				},
+				{
+					"name": "Вівсянка! Пані та Панове",
+					"price": "350 грн",
+					"weight": "200 г.",
+					"description": "- Солона вівсяна каша з яйцем пашот, авокадо, томатами черрі, трюфельною олією та пармезаном. - Сирники зі сметаною та джемом- Сік/кава/чай",
+					"thumb": "/oleksandrhumeniuk/img/breakfast4.jpeg"
+				},
+				{
+					"name": "Бельгійська вафля з шоколадно - горіховою пастою",
+					"price": "350 грн",
+					"weight": "200 г.",
+					"description": "- Бельгійська вафля з шоколадно-горіховою пастою, бананом та мигдальними пластівцями- Сік/кава/чай.",
+					"thumb": "/oleksandrhumeniuk/img/breakfast5.jpeg"
+				}
+			]
+		}
+	],
+	"nationalDishes": [
+		{
+			"name": "Народні страви",
+			"products": [
+				{
+					"name": "ОВОЧІ НА ГРИЛІ",
+					"price": "140 грн",
+					"weight": "200 г.",
+					"description": "Кабачок, перець болгарський, томат, гриби печериці , баклажан, кукурудзяні початки.",
+					"thumb": "/oleksandrhumeniuk/img/dish1.jpeg"
+				},
+				{
+					"name": "КУРЯЧІ КОТЛЕТИ З КАРТОПЛЯНИМ ПЮРЕ",
+					"price": "240 грн",
+					"weight": "200 г.",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+					"thumb": "/oleksandrhumeniuk/img/dish2.jpeg"
+				},
+				{
+					"name": "КУРЯЧИЙ ШНІЦЕЛЬ З КАРТОПЛЕЮ ТА СОУСОМ ТАРТАР",
+					"price": "260 грн",
+					"weight": "170г/150г/50г.",
+					"description": "Ніжні курячі котлети з картопляним пюре, маринованим огірком та соленим томатом.",
+					"thumb": "/oleksandrhumeniuk/img/dish3.jpeg"
+				},
+				{
+					"name": "ЧЕРВОНИЙ БОРЩ З ЯЛОВИЧИНОЮ ТА КВАСОЛЕЮ",
+					"price": "155 грн",
+					"weight": "300 г.",
+					"description": "Картопля, капуста б/к, цибуля ріпчаста, морква, буряк, паста томатна, квасоля червона, часник, лавровий лист, сіль, перець, яловичина, сметана  300/50/30/55 г.",
+					"thumb": "/oleksandrhumeniuk/img/dish4.jpeg"
+				},
+				{
+					"name": "СУП З КУРКИ ТА ЛОКШИНИ",
+					"price": "125 грн",
+					"weight": "200 г.",
+					"description": "Бульйон курячий, куряче філе, куряче стегно, цибуля ріпчаста, морква, яйце куряче, локшина, петрушка, лавровий лист, сіль, перець.",
+					"thumb": "/oleksandrhumeniuk/img/dish5.jpeg"
+				},
+				{
+					"name": "СМАЖЕНІ ПЕЛЬМЕНІ",
+					"price": "185 грн",
+					"weight": "200 г.",
+					"description": "Пельмені (курка, свинина, яловичина, борошно, олія соняшникова, сіль, яйце куряче, перець чорний), зелень кропу, соус Тартар .",
+					"thumb": "/oleksandrhumeniuk/img/dish6.jpeg"
+				},
+				{
+					"name": "САЛО З ЧАСНИКОМ ТА ХРІНОМ",
+					"price": "230 грн",
+					"weight": "200 г.",
+					"description": "Сало, хліб бородинський, гірчиця, хрін, цибуля зелена, зелень петрушки.",
+					"thumb": "/oleksandrhumeniuk/img/dish7.jpeg"
+				}
+			]
+		}
+	],
 	"footer": {
 		"products": [
 			{
@@ -139,7 +255,6 @@
 			"name": "Tag one"
 		}
 	],
-
 	"groups": [
 		{
 			"categories": [

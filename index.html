@@ -28,33 +28,84 @@
 </head>
 
 <body>
-	<header class="web-header">
-		<div class="logo">Смачна кухня</div>
+    <header class="web-header">
+        <div class="logo">Смачна кухня</div>
 
-		<div class="menu">
-			<a href="#">Умови доставки</a>
-			<a href="#">Замовити столик</a>
-			<a href="#">
-				<img src="https://i.pinimg.com/originals/a0/88/10/a0881023763e13874bf497e680a3594a.png" alt="Пошук" class="search-icon">
-			</a>
-			<button class="number">
-				<img src="https://cdn4.iconfinder.com/data/icons/basic-icon-set-1/512/19-512.png" alt="workTime" class="time-icon">
-			</button>
-			<button class="number">{{{variables.phone}}}</button>
-			<button class="button">Увійти</button>
-			<button class="cart-button">
-				<div class="text_bag"> 3 </div>
-				<img src="https://cdn2.iconfinder.com/data/icons/e-commerce-211/128/02_Shopping_Bag-512.png" alt="Корзина" class="cart-icon">
-			</button>
+        <div class="menu">
+            <a href="#">Умови доставки</a>
+            <a href="#">Замовити столик</a>
+            <a href="#">
+                <img src="https://i.pinimg.com/originals/a0/88/10/a0881023763e13874bf497e680a3594a.png" alt="Пошук"
+                    class="search-icon">
+            </a>
+            <button class="number">
+                <img src="https://cdn4.iconfinder.com/data/icons/basic-icon-set-1/512/19-512.png" alt="workTime"
+                    class="time-icon">
+            </button>
+            <button class="number">{{{variables.phone}}}</button>
+            <button class="button">Увійти</button>
+            <button class="cart-button">
+                <div class="text_bag"> 3 </div>
+                <img src="https://cdn2.iconfinder.com/data/icons/e-commerce-211/128/02_Shopping_Bag-512.png"
+                    alt="Корзина" class="cart-icon">
+            </button>
 
-		</div>
-	</header>
+        </div>
+    </header>
 
     <!-- HTML -->
 
-	<footer>
-		<p>&copy; 2024 Компанія. Усі права захищені.</p>
-	</footer>
+    <main>
+        <div class="scroll-container">
+            <button class="scroll-buttonLeft" onclick="scrollLeft()">←</button>
+            <div class="container">
+                <div class="scroll-box" *ngFor="let image of test">
+                    {% for thumb in restname %}
+                    <img src="{{{thumb.src}}}" alt="{{{}}}">
+                    {% endfor %}
+
+                </div>
+            </div>
+            <button class="scroll-buttonRight" onclick="scrollRight()">→</button>
+        </div>
+        <div class="main-container">
+            {% for category in dishesCategory %}
+            <div id="{{{tag.id}}}" class="products-header">{{{category.name}}}</div>
+            {% for product in category.products %}
+            <div class="product-container">
+                <img src="{{{product.thumb}}}" alt="Product 1" class="product-image">
+                <h3 class="product-title">{{{product.name}}}</h3>
+                <p class="product-description">{{{product.description}}}</p>
+                <span class="product-price">{{{product.price}}}</span>
+            </div>
+            {% endfor %}
+            {% endfor %}
+        </div>
+        <div class="main-container">
+            {% for category in nationalDishes %}
+            <div id="{{{tag.id}}}" class="products-header">{{{category.name}}}</div>
+            {% for product in category.products %}
+            <div class="product-container">
+                <img src="{{{product.thumb}}}" alt="Product 1" class="product-image">
+                <h3 class="product-title">{{{product.name}}}</h3>
+                <p class="product-description">{{{product.description}}}</p>
+                <span class="product-price">{{{product.price}}}</span>
+            </div>
+            {% endfor %}
+            {% endfor %}
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Компанія. Усі права захищені.</p>
+    </footer>
 
     <script src="/oleksandrhumeniuk/js/index.js"></script>
     <script>
