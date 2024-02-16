@@ -6,6 +6,7 @@
 @import "scss/base";
 // pages
 @import "scss/pages/template";
+
 $color_1: #000000;
 $color_2: #fff;
 $font-family_1: Arial, sans-serif;
@@ -119,6 +120,7 @@ img {
     cursor: pointer;
     transition: transform 0.3s ease;
     object-fit: cover;
+    border-radius: 8px; // Додаємо заокруглення картинок
 }
 
 img:hover {
@@ -237,6 +239,8 @@ main {
     flex-direction: column;
     position: relative;
     justify-content: flex-start; // Додаємо вирівнювання вліво
+    margin-right: auto; // Вирівнюємо блоки по центру горизонтально
+    margin-left: auto; // Вирівнюємо блоки по центру горизонтально
 }
 
 .product-container:nth-child(4n) {
@@ -246,6 +250,7 @@ main {
 .product-image {
     max-width: 100%;
     height: auto;
+    border-radius: 8px; // Додаємо заокруглення картинок
 }
 
 .product-title {
