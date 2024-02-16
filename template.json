@@ -8,7 +8,8 @@
 	"moderators": [],
 	"scss": "scss/index.scss",
 	"variables": {
-		"phone": "+380 (98) 352-22-22"
+		"phone": "+380 (98) 352-22-22",
+		"primary_color": "#ffffff"
 	},
 	"restname": [
 		{
