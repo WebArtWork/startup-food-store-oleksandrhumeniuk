@@ -2,9 +2,8 @@
 @import "scss/utils/normalize";
 @import "scss/utils/fonts";
 @import "scss/utils/vars";
-// @import "scss/media";
+//@import "scss/media";
 @import "scss/base";
-// pages
 @import "scss/pages/template";
 
 $color_1: #000000;
@@ -120,7 +119,7 @@ img {
     cursor: pointer;
     transition: transform 0.3s ease;
     object-fit: cover;
-    border-radius: 8px; // Додаємо заокруглення картинок
+    border-radius: 8px;
 }
 
 img:hover {
@@ -132,15 +131,29 @@ main {
     border-top: 4px solid #ccc;
 }
 
-.scroll-buttonLeft,
+.scroll-buttonLeft {
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #F6971D;
+    border: 1px solid #F6971D;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    position: relative;
+    left: 12.5%;
+}
+
 .scroll-buttonRight {
     padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+    background-color: transparent;
+    color: #F6971D;
+    border: 1px solid #F6971D;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50%;
+    position: relative;
+    right: 12.5%;
 }
+
 
 .container {
     width: 70%;
@@ -168,17 +181,6 @@ main {
     border-radius: 5px;
 }
 
-.word-container {
-    width: 100px;
-    height: 50px;
-    background-color: #ccc;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-}
-
 .scroll-container {
     display: flex;
     justify-content: center;
@@ -189,7 +191,9 @@ main {
     padding: 10px;
     cursor: grab;
     cursor: -webkit-grab;
+    text-align: center;
 }
+
 
 .scroll-container:nth-child(2) .container {
     width: 65%;
@@ -204,6 +208,22 @@ main {
 
 .scroll-box {
     display: flex;
+    border: none !important;
+}
+
+.scroll-image {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #F6971D;
+}
+
+.scroll-image:hover {
+    transform: scale(1.1);
 }
 
 .scroll-container-wrapper {
@@ -218,39 +238,40 @@ main {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; // Рівномірний розподіл простору між блоками
+    justify-content: flex-start;
 }
 
 .products-header {
     font-weight: bolder;
     text-align: left;
     font-size: 1.5em;
-    margin-bottom: 10px;
-    height: 50px;
+    margin-bottom: 50px;
+    margin-left: 12%;
+    height: 5px;
 }
 
 .product-container {
-    width: 23%; // Змінено ширину блоків продуктів
-    margin-bottom: 20px; // Додано відступ між блоками продуктів
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
     display: flex;
     flex-direction: column;
     position: relative;
-    justify-content: flex-start; // Додаємо вирівнювання вліво
-    margin-right: auto; // Вирівнюємо блоки по центру горизонтально
-    margin-left: auto; // Вирівнюємо блоки по центру горизонтально
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
 }
 
 .product-container:nth-child(4n) {
-    margin-right: 0; // Виправлено відступи між кожним четвертим блоком
+    margin-right: 0;
 }
 
 .product-image {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; // Додаємо заокруглення картинок
+    border-radius: 8px;
 }
 
 .product-title {
@@ -262,11 +283,26 @@ main {
     margin-bottom: 10px;
 }
 
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .product-price {
     font-weight: bold;
-    color: $color_1;
-    margin-top: auto;
+    color: #000;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background-color: #F6971D;
 }
+
+.product-weight {
+    font-size: 0.9em;
+    color: #999;
+}
+
 
 .add-to-cart-button {
     background-color: $background-color_1;
@@ -277,11 +313,67 @@ main {
     margin-top: 10px;
 }
 
-// Розділіть народні страви та сніданки
-
 .popular-dishes,
 .breakfast {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; // Додаємо вирівнювання вліво
+    justify-content: flex-start;
+}
+
+.footer {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 0;
+    border-top: 2px solid #F6971D;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-section {
+    text-align: center;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-links li {
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }

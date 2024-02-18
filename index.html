@@ -29,8 +29,7 @@
 
 <body>
     <header class="web-header">
-        <div class="logo">Смачна кухня</div>
-
+        <div class="logo">{{{variables.name}}}</div>
         <div class="menu">
             <a href="#">Умови доставки</a>
             <a href="#">Замовити столик</a>
@@ -57,20 +56,22 @@
 
     <main>
         <div class="scroll-container">
-            <button class="scroll-buttonLeft" onclick="scrollLeft()">←</button>
-            <div class="container">
-                <div class="scroll-box" *ngFor="let image of test">
-                    {% for thumb in restname %}
-                    <img src="{{{thumb.src}}}" alt="{{{}}}">
-                    {% endfor %}
+            <button class="scroll-buttonLeft" onclick="scrollLeft()">
+                < </button>
+                    <div class="container">
+                        <div class="scroll-box">
+                            {% for thumb in restname %}
+                            <img class="scroll-image" src="{{{thumb.src}}}" alt="{{{}}}">
+                            {% endfor %}
 
-                </div>
-            </div>
-            <button class="scroll-buttonRight" onclick="scrollRight()">→</button>
+                        </div>
+                    </div>
+                    <button class="scroll-buttonRight" onclick="scrollRight()">></button>
         </div>
+        {% for category in dishesCategory %}
+        <div id="{{{tag.id}}}" class="products-header">{{{category.name}}}</div>
         <div class="main-container">
-            {% for category in dishesCategory %}
-            <div id="{{{tag.id}}}" class="products-header">{{{category.name}}}</div>
+
             {% for product in category.products %}
             <div class="product-container">
                 <img src="{{{product.thumb}}}" alt="Product 1" class="product-image">
@@ -81,31 +82,57 @@
             {% endfor %}
             {% endfor %}
         </div>
+        {% for category in nationalDishes %}
+        <div id="{{{tag.id}}}" class="products-header">{{{category.name}}}</div>
         <div class="main-container">
-            {% for category in nationalDishes %}
-            <div id="{{{tag.id}}}" class="products-header">{{{category.name}}}</div>
+
             {% for product in category.products %}
             <div class="product-container">
                 <img src="{{{product.thumb}}}" alt="Product 1" class="product-image">
                 <h3 class="product-title">{{{product.name}}}</h3>
                 <p class="product-description">{{{product.description}}}</p>
-                <span class="product-price">{{{product.price}}}</span>
+                <span class="product-weight">{{{product.weight}}} <span
+                        class="product-price">{{{product.price}}}</span></span>
             </div>
             {% endfor %}
             {% endfor %}
         </div>
     </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Компанія</h3>
+                <ul>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Політика конфіденційності</a></li>
+                    <li><a href="#">Інші продукти</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Підтримка</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Правила та умови</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Соціальні мережі</h3>
+                <ul class="social-links">
+                    <li><a href="{{{variable.buttonFace}}}" class="buttonFace"><img
+                                src="/oleksandrhumeniuk/img/faceLogo.png" alt="Facebook"></a></li>
+                    <li><a href="{{{variable.buttonInst}}}" class="buttonInst"><img
+                                src="/oleksandrhumeniuk/img/instLogo.png" alt="Instagram"></a></li>
+                    <li><a href="{{{variable.buttonTg}}}" class="buttonTg"><img src="/oleksandrhumeniuk/img/tgLogo.png"
+                                alt="Telegram"></a>
+                    </li>
+                </ul>
+            </div>
 
 
-
-
-
-
-
-
-    <footer>
-        <p>&copy; 2024 Компанія. Усі права захищені.</p>
+        </div>
     </footer>
+
 
     <script src="/oleksandrhumeniuk/js/index.js"></script>
     <script>
