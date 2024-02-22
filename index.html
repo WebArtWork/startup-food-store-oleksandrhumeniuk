@@ -22,6 +22,11 @@
     <base href="/">
     <link rel="icon" type="image/x-icon" href="/oleksandrhumeniuk/img/favicon.ico">
     <link rel="stylesheet" href="/oleksandrhumeniuk/css/index.css">
+	 <style>
+      :root {
+      	--primary_color: {{{variables.primary_color || "#ffffff"}}};
+      }
+    </style>
     <style>
         /* <!-- CSS --> */
     </style>
@@ -41,18 +46,20 @@
                 <img src="https://cdn4.iconfinder.com/data/icons/basic-icon-set-1/512/19-512.png" alt="workTime"
                     class="time-icon">
             </button>
-            <button class="number">{{{variables.phone}}}</button>
+			{% if variables.phone %}
+            <a href="tel:{{{variables.phone}}}" class="number">{{{variables.phone}}}</a>
+			{% endif %}
             <button class="button">Увійти</button>
             <button class="cart-button">
                 <div class="text_bag"> 3 </div>
                 <img src="https://cdn2.iconfinder.com/data/icons/e-commerce-211/128/02_Shopping_Bag-512.png"
                     alt="Корзина" class="cart-icon">
             </button>
-
         </div>
     </header>
 
     <!-- HTML -->
+
 
     <main>
         <div class="scroll-container">
@@ -131,13 +138,14 @@
 
 
         </div>
+
+    <footer>
+        <p>&copy; 2024 Компанія. Усі права захищені.</p>
+
     </footer>
 
 
     <script src="/oleksandrhumeniuk/js/index.js"></script>
-    <script>
-        // <!-- JS -->
-    </script>
 </body>
 
 </html>

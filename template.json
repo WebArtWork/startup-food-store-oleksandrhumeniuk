@@ -9,6 +9,7 @@
 	"scss": "scss/index.scss",
 	"variables": {
 		"phone": "+380 (98) 352-22-22",
+
 		"name": "Смачна кухня",
 		"buttomFace": "href",
 		"buttomInst": "href",

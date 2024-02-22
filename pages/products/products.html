@@ -1,31 +1,40 @@
-<!-- <main>
+<main>
 	<div class="scroll-container">
 		<button class="scroll-buttonLeft" onclick="scrollLeft()">←</button>
 		<div class="container">
-			<div class="scroll-box">
-				{% for tag in tags %}
-				<a href="#{{{tag.id}}}" class="word-container">{{{tag.name}}}</a>
+			<div class="scroll-box" *ngFor="let image of test">
+				{% for thumb in restname %}
+				<img src="{{{thumb.src}}}" alt="{{{}}}">
 				{% endfor %}
+
 			</div>
 		</div>
 		<button class="scroll-buttonRight" onclick="scrollRight()">→</button>
 	</div>
-
- 	https://webartwork.github.io/wjst/ -->
-<!-- {% for tag in tags %}
-	<div id="{{{tag.id}}}" class="products-header">{{{tag.name}}}</div>
-
 	<div class="main-container">
-		{% for product in tag.products %}
+		{% for category in dishesCategory %}
+		<div id="{{{tag.id}}}" class="products-header">{{{category.name}}}</div>
+		{% for product in category.products %}
 		<div class="product-container">
-			<img src="{{{product.thumb}}}" alt="Product 1" class="product-image" />
+			<img src="{{{product.thumb}}}" alt="Product 1" class="product-image">
 			<h3 class="product-title">{{{product.name}}}</h3>
 			<p class="product-description">{{{product.description}}}</p>
 			<span class="product-price">{{{product.price}}}</span>
-			<span class="product-price">{{{product.weight}}}</span> -->
-<!-- <button class="add-to-cart-button">+ Додати</button> -->
-<!-- </div>
+		</div>
+		{% endfor %}
 		{% endfor %}
 	</div>
-	{% endfor %}
-</main> -->
+	<div class="main-container">
+		{% for category in nationalDishes %}
+		<div id="{{{tag.id}}}" class="products-header">{{{category.name}}}</div>
+		{% for product in category.products %}
+		<div class="product-container">
+			<img src="{{{product.thumb}}}" alt="Product 1" class="product-image">
+			<h3 class="product-title">{{{product.name}}}</h3>
+			<p class="product-description">{{{product.description}}}</p>
+			<span class="product-price">{{{product.price}}}</span>
+		</div>
+		{% endfor %}
+		{% endfor %}
+	</div>
+</main>
